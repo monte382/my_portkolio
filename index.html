@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتصر معروف | موقع شخصي</title>
+    <style>
+        /* إعدادات التصميم العام */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #141414;
+            color: #f5f5f5;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        /* تصميم الهيدر */
+        header {
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        header h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            animation: slideInFromLeft 1.5s ease;
+        }
+        header p {
+            font-size: 1.5em;
+            opacity: 0.8;
+            animation: slideInFromRight 1.5s ease;
+        }
+        /* تأثيرات */
+        @keyframes slideInFromLeft {
+            0% { opacity: 0; transform: translateX(-50px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInFromRight {
+            0% { opacity: 0; transform: translateX(50px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        /* تصميم الأقسام */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            animation: fadeIn 1s ease-out;
+        }
+        .about, .projects, .contact {
+            margin-bottom: 30px;
+            padding: 40px;
+            background: #1c1c1c;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .about:hover, .projects:hover, .contact:hover {
+            transform: translateY(-10px);
+        }
+        h2 {
+            font-size: 2.5em;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            color: #bbb;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        /* تحسين الفوتر */
+        footer {
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            color: #f5f5f5;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        /* تأثير النصوص عند التمرير */
+        .animate-text {
+            animation: fadeInText 2s ease;
+        }
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        /* تصميم روابط التنقل */
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+        /* تحسين نموذج الاتصال */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-size: 1.1em;
+            color: #bbb;
+        }
+        input, textarea {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #3498db;
+            font-size: 1.1em;
+            background-color: #2c2c2c;
+            color: #fff;
+        }
+        button {
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        /* تصميم نافذة دردشة الروبوت */
+        #chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+            animation: bounce 1s ease-in-out infinite;
+        }
+        #chatbot:hover {
+            background-color: #2980b9;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>منتصر معروف</h1>
+        <p>مطور ويب متخصّص في تصميم المواقع الحديثة</p>
+    </header>
+
+    <!-- روابط التنقل -->
+    <nav>
+        <a href="#about">عنّي</a>
+        <a href="#projects">مشاريعي</a>
+        <a href="#contact">اتصل بي</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2 class="animate-text">عنّي</h2>
+        <p class="animate-text">أنا منتصر معروف، مطور ويب متحمس لتقديم تصميمات مبتكرة وتجربة مستخدم فريدة لعملائي. أستمتع بإيجاد حلول تقنية تُضيف قيمة وتحقق أهداف المشاريع.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="animate-text">مشاريعي</h2>
+        <p class="animate-text">بعض من المشاريع التي أعمل عليها أو أنجزتها تشمل:</p>
+        <ul class="animate-text">
+            <li>موقع تجارة إلكترونية بتصميم فريد</li>
+            <li>تطبيق لإدارة المحتوى للمؤسسات</li>
+            <li>موقع مصورين محترفين</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="animate-text">اتصل بي</h2>
+        <p class="animate-text">للتواصل معي أو لمناقشة مشروعك، يمكنكم إرسال بريد إلكتروني لي مباشرة أو ملء النموذج أدناه.</p>
+        <form>
+            <label for="email">البريد الإلكتروني:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">رسالتك:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <!-- نافذة دردشة الروبوت -->
+    <div id="chatbot" onclick="window.open('https://webchat.botframework.com/embed/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', '_blank')">
+        <i class="fas fa-comment-alt"></i> تواصل مع الروبوت
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024 منتصر معروف</p>
+    </footer>
+
+</body>
+</html>
